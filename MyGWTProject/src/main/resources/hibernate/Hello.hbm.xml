@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="kz.projects.gwt.MyGWTProject.server.HelloWorld" table="hello">
+        <id name="ID" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="text" type="string">
+            <column name="text" length="256" not-null="true" unique="true" />
+        </property>
+    </class>
+</hibernate-mapping>
