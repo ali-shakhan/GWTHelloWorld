@@ -1,0 +1,1 @@
+INSERT INTO hello (text) VALUES ('Hello World!');
